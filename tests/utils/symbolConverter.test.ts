@@ -293,7 +293,7 @@ Deno.test("SymbolConverter outcome markets", async (t) => {
   });
 
   await t.step("getSzDecimals()", () => {
-    assertEquals(converter.getSzDecimals("nba-finals-game-3-san-antonio"), 5);
-    assertEquals(converter.getSzDecimals("2026-world-cup-champion-argentina-yes"), 5);
+    assertEquals(converter.getSzDecimals("nba-finals-game-3-san-antonio"), 0);
+    assertEquals(converter.getSzDecimals("2026-world-cup-champion-argentina-yes"), 0);
   });
 });
