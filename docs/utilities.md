@@ -148,7 +148,8 @@ formatSize("0.00123456789", szDecimals); // "0.00123"
 For spot markets, `getSzDecimals` returns the `szDecimals` of the **base** token — which is what both formatters expect
 for an order on that pair.
 
-Outcome markets carry no `szDecimals` metadata, so `getSzDecimals` always returns `5` for them.
+Outcome markets carry no `szDecimals` metadata. Their shares trade in whole units, so `getSzDecimals` always returns `0`
+for them.
 
 ### Spot pair IDs
 
